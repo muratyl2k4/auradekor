@@ -89,7 +89,7 @@ const HomePage = () => {
           {/* Large Feature */}
           <Link to="/proje-detay" className="col-span-12 md:col-span-7 relative group overflow-hidden rounded-lg cursor-pointer block h-[400px] md:h-auto">
             <img 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNK-fhX6oGKUiBW5wyAQbLumv0v56WN2PILkScr2X28JiQDgGfCTcIByAARsfHuZX8h4-LYGE5mhSpWYmFPUCCJ1xouPmPEZFaJrXKZ8kXYyLdI9ZxM1hyuzEUigev0fcyx-JjjLgEKilLRGGJ0V7gdiqAcgioKBSUxvMF1A_kisiuxCjXys7pLf_urA5IJjA9O7NP_slx5ku26L_-mAtSgGLtlJt3s5qHc1KopaJtqC7fdiMC6BxkOR75nMSbx0UzemZwxAjGp7c"
               alt="Project 01"
             />
@@ -104,7 +104,7 @@ const HomePage = () => {
             {/* Top Small */}
             <Link to="/proje-detay" className="relative group overflow-hidden rounded-lg cursor-pointer block">
               <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcr7IlGUDHwUfK9NxdlLMO1z2GtChEPv5A5vU7Jckn37owmm9mAXqWpwBaFC9OtIjgYs1eHIWCaPVss77WuXOb3p9zwmImW3QgPk3oCOOxgj6jVWHO0rPBj6XbYCrakxiRs019lMLx5AiOOAtQ2hjE2IO4DwyYIC7E3INvtx9AmzZUFqLHt2UXRRvZkZ8v-ZBlxIsYbSq2BAlA919ifQnqlPfxcKCWvakAotN5_48kCx8xpFQDeFQpQYoZCgDYrE7v3bJxYxx1uNI"
                 alt="Product detail"
               />
@@ -116,7 +116,7 @@ const HomePage = () => {
             {/* Bottom Small */}
             <Link to="/proje-detay" className="relative group overflow-hidden rounded-lg cursor-pointer block">
               <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6wqhyRxkLvNN5v1IdE6bDbiJ8ld6fthopflDUOm9BQh6zHJmeh_HaID-Rly7gpMke7QKM7r3LUr0E2kI02gNRte0pfW2fVNt_4UUaF6JL0aCu0HO92kAxRblKDT43TeMWYnWt2SLGy8wqL5omwKd5xFru0wBfil4lgiB4H80g4VJWAtek7EczN65ogNN7bJd9NcTGMoToBaLyZqbX9sGkhN1iiuqVHKLs204rZM-Ka71w3BlW3MZaSwyXsf4lpydSC4K8lr3loK0"
                 alt="Product detail"
               />
@@ -126,6 +126,43 @@ const HomePage = () => {
               </div>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="max-w-7xl mx-auto px-8 py-32 bg-surface">
+        <div className="text-center mb-16">
+          <span className="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Uzmanlık Alanlarımız</span>
+          <h2 className="font-headline text-[2rem] text-on-surface">Hizmetlerimiz</h2>
+          <div className="w-12 h-px bg-primary mx-auto mt-6"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8">
+          <div className="flex items-start gap-4 p-6 border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-colors">
+            <span className="material-symbols-outlined text-primary text-2xl" style={{ fontVariationSettings: "'wght' 200" }}>format_paint</span>
+            <div>
+              <h3 className="font-headline text-lg text-on-surface mb-2">Dekoratif Çekim</h3>
+              <p className="font-body text-sm text-on-surface-variant">Mekanlarınıza estetik dokunuşlar katıyoruz.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 p-6 border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-colors">
+            <span className="material-symbols-outlined text-primary text-2xl" style={{ fontVariationSettings: "'wght' 200" }}>brush</span>
+            <div>
+              <h3 className="font-headline text-lg text-on-surface mb-2">Dekoratif Boya</h3>
+              <p className="font-body text-sm text-on-surface-variant">Özgün desenler ve dokularla duvarlarınızı canlandırıyoruz.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 p-6 border border-outline-variant/30 rounded-lg hover:border-primary/50 transition-colors">
+            <span className="material-symbols-outlined text-primary text-2xl" style={{ fontVariationSettings: "'wght' 200" }}>imagesearch_roller</span>
+            <div>
+              <h3 className="font-headline text-lg text-on-surface mb-2">İtalyan Boya</h3>
+              <p className="font-body text-sm text-on-surface-variant">Lüks ve sofistike İtalyan boya uygulamaları.</p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-16 text-center">
+          <Link to="/projeler" className="inline-block font-label text-xs uppercase tracking-widest text-secondary border-b border-transparent hover:border-secondary pb-1 transition-all duration-300">
+              Tüm Hizmetleri Gör
+          </Link>
         </div>
       </section>
 
