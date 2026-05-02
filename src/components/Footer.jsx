@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="space-y-6">
           <h4 className="font-bold text-[#56642b]">Konum & Bülten</h4>
           <p className="normal-case text-[#2e342d]/50 leading-relaxed font-body tracking-normal">
-             Atelier Yolu No: 88<br/>Tasarım Bölgesi, İstanbul
+             Levent, Büyükdere Cd. No:185<br/>Beşiktaş, İstanbul
           </p>
           <div className="relative mt-4">
             <input 

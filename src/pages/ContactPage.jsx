@@ -82,34 +82,31 @@ const ContactPage = () => {
             <div className="bg-surface-container-highest p-12 rounded-lg relative overflow-hidden group h-64">
               <div className="relative z-10 hidden md:block">
                 <span className="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">Atölyemiz</span>
-                <h3 className="font-headline text-3xl mb-6">Kopenhag</h3>
+                <h3 className="font-headline text-3xl mb-6">İstanbul</h3>
                 <p className="text-on-surface-variant leading-relaxed mb-8">
-                    Bredgade 24, 1260 Kopenhag K<br/>
-                    Danimarka
+                    Levent, Büyükdere Cd. No:185<br/>
+                    Beşiktaş / İstanbul
                 </p>
                 <div className="flex flex-col gap-2 font-label text-xs tracking-widest uppercase">
-                  <span className="flex items-center gap-3"><span className="material-symbols-outlined text-lg">call</span> +45 33 12 44 00</span>
-                  <span className="flex items-center gap-3"><span className="material-symbols-outlined text-lg">mail</span> studio@auradekor.com</span>
+                  <span className="flex items-center gap-3"><span className="material-symbols-outlined text-lg">call</span> 0536 788 17 75</span>
+                  <span className="flex items-center gap-3"><span className="material-symbols-outlined text-lg">mail</span> Sinanyakisan1907@gmail.com</span>
                 </div>
               </div>
               {/* Abstract Background Decoration */}
               <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
             </div>
 
-            {/* Stylized Map Container */}
+            {/* Google Map Container */}
             <div className="relative h-80 rounded-lg overflow-hidden ambient-card-shadow">
-              <img 
-                className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvuRFCE3_6XyykWI7wdBF1jQvwM986xKQ2aFQm_ZMmuzJC1rMtXd9n5yvi38XmUNyKMsoxScLqxPdtYfzRq_PW1OFq1T81tg77A2SvbtUcbFOjuJ5wX2a9VyB-3XWq6jtjBmRvKDF3eODxtqQpukqM9rlS__opAKO5_GJsiNZ3tN8gYxjo0BuKPnh4KsHWTmW-53KQX9nwEsYQEvZxBcIm5RsHf6PkStrGeOxnnnVhp16BVZ0wrAPbPXuKImcEv-wOadsZEM15KI"
-                alt="Map"
-              />
-              <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="w-4 h-4 bg-primary rounded-full ring-8 ring-primary/20"></div>
-              </div>
-              <div className="absolute bottom-4 left-4 bg-surface/90 backdrop-blur-md px-4 py-2 rounded-lg text-[10px] uppercase tracking-widest font-label shadow-sm">
-                Showroom Konumu
-              </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3007.882180416762!2d28.732277076043587!3d41.071567971341715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA0JzE3LjYiTiAyOMKwNDQnMDUuNSJF!5e0!3m2!1str!2str!4v1777712970738!5m2!1str!2str" 
+                className="w-full h-full"
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Aura Dekor Konum"
+              ></iframe>
             </div>
           </div>
         </div>

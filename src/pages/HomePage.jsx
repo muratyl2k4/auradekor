@@ -63,10 +63,10 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex items-center gap-8"
             >
-              <Link to="/iletisim" className="bg-primary text-on-primary px-10 py-5 rounded-full font-label uppercase tracking-widest text-xs hover:opacity-90 transition-all editorial-shadow flex items-center gap-2 w-fit">
+              <a href="https://wa.me/905367881775?text=Merhaba,%20Aura%20Dekor%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-10 py-5 rounded-full font-label uppercase tracking-widest text-xs hover:opacity-90 transition-all editorial-shadow flex items-center gap-2 w-fit">
                 <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>chat</span>
                 <span>Fiyat Al</span>
-              </Link>
+              </a>
               <Link to="/iletisim" className="font-label text-xs uppercase tracking-widest border-b border-on-surface pb-1 hover:text-primary hover:border-primary transition-colors">
                 Hikayemiz
               </Link>
@@ -85,47 +85,45 @@ const HomePage = () => {
           <Link to="/projeler" className="font-label text-xs uppercase tracking-widest text-secondary hover:underline">Tüm Projeleri Görüntüle</Link>
         </div>
         
-        <div className="grid grid-cols-12 gap-8 md:h-[800px]">
-          {/* Large Feature */}
-          <Link to="/proje-detay" className="col-span-12 md:col-span-7 relative group overflow-hidden rounded-lg cursor-pointer block h-[400px] md:h-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link to="/proje-detay/geometrik-yansimalar" className="relative group overflow-hidden rounded-lg cursor-pointer block aspect-[4/3]">
             <img 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNK-fhX6oGKUiBW5wyAQbLumv0v56WN2PILkScr2X28JiQDgGfCTcIByAARsfHuZX8h4-LYGE5mhSpWYmFPUCCJ1xouPmPEZFaJrXKZ8kXYyLdI9ZxM1hyuzEUigev0fcyx-JjjLgEKilLRGGJ0V7gdiqAcgioKBSUxvMF1A_kisiuxCjXys7pLf_urA5IJjA9O7NP_slx5ku26L_-mAtSgGLtlJt3s5qHc1KopaJtqC7fdiMC6BxkOR75nMSbx0UzemZwxAjGp7c"
-              alt="Project 01"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+              src="/projects/resim5.jpeg"
+              alt="Aura Geometrisi"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
-            <div className="absolute bottom-10 left-10 text-surface-container-lowest">
+            <div className="absolute bottom-8 left-8 text-surface-container-lowest">
               <p className="font-label text-[10px] uppercase tracking-[0.2em] mb-2">Proje 01</p>
-              <h3 className="font-headline text-3xl">Organik Modernizm</h3>
+              <h3 className="font-headline text-2xl">Aura Geometrisi</h3>
             </div>
           </Link>
           
-          <div className="col-span-12 md:col-span-5 grid grid-rows-2 gap-8">
-            {/* Top Small */}
-            <Link to="/proje-detay" className="relative group overflow-hidden rounded-lg cursor-pointer block">
-              <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcr7IlGUDHwUfK9NxdlLMO1z2GtChEPv5A5vU7Jckn37owmm9mAXqWpwBaFC9OtIjgYs1eHIWCaPVss77WuXOb3p9zwmImW3QgPk3oCOOxgj6jVWHO0rPBj6XbYCrakxiRs019lMLx5AiOOAtQ2hjE2IO4DwyYIC7E3INvtx9AmzZUFqLHt2UXRRvZkZ8v-ZBlxIsYbSq2BAlA919ifQnqlPfxcKCWvakAotN5_48kCx8xpFQDeFQpQYoZCgDYrE7v3bJxYxx1uNI"
-                alt="Product detail"
-              />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
-              <div className="absolute bottom-8 left-8 text-surface-container-lowest">
-                <h3 className="font-headline text-xl">Seramik Dokular</h3>
-              </div>
-            </Link>
-            {/* Bottom Small */}
-            <Link to="/proje-detay" className="relative group overflow-hidden rounded-lg cursor-pointer block">
-              <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6wqhyRxkLvNN5v1IdE6bDbiJ8ld6fthopflDUOm9BQh6zHJmeh_HaID-Rly7gpMke7QKM7r3LUr0E2kI02gNRte0pfW2fVNt_4UUaF6JL0aCu0HO92kAxRblKDT43TeMWYnWt2SLGy8wqL5omwKd5xFru0wBfil4lgiB4H80g4VJWAtek7EczN65ogNN7bJd9NcTGMoToBaLyZqbX9sGkhN1iiuqVHKLs204rZM-Ka71w3BlW3MZaSwyXsf4lpydSC4K8lr3loK0"
-                alt="Product detail"
-              />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
-              <div className="absolute bottom-8 left-8 text-surface-container-lowest">
-                <h3 className="font-headline text-xl">Huzur Köşesi</h3>
-              </div>
-            </Link>
-          </div>
+          <Link to="/proje-detay/antrasit-karsilama" className="relative group overflow-hidden rounded-lg cursor-pointer block aspect-[4/3]">
+            <img 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+              src="/projects/resim1.jpeg"
+              alt="Antrasit Karşılama"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
+            <div className="absolute bottom-8 left-8 text-surface-container-lowest">
+              <p className="font-label text-[10px] uppercase tracking-[0.2em] mb-2">Proje 02</p>
+              <h3 className="font-headline text-2xl">Antrasit Karşılama</h3>
+            </div>
+          </Link>
+
+          <Link to="/proje-detay/kozmik-somine" className="relative group overflow-hidden rounded-lg cursor-pointer block aspect-[4/3]">
+            <img 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+              src="/projects/resim4.jpeg"
+              alt="Kozmik Şömine"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all"></div>
+            <div className="absolute bottom-8 left-8 text-surface-container-lowest">
+              <p className="font-label text-[10px] uppercase tracking-[0.2em] mb-2">Proje 03</p>
+              <h3 className="font-headline text-2xl">Kozmik Şömine</h3>
+            </div>
+          </Link>
         </div>
       </section>
 
