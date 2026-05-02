@@ -75,8 +75,98 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Pricing Packages Section */}
+      <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.8 }} className="max-w-7xl mx-auto px-8 py-32">
+        <div className="text-center mb-16">
+          <span className="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Boya Paketlerimiz</span>
+          <h2 className="font-headline text-[2rem] text-on-surface">Dairenizi Yenileyelim</h2>
+          <p className="font-body text-on-surface-variant max-w-md mx-auto mt-4">Evinizin büyüklüğüne uygun paketlerimizle, profesyonel boya ve badana hizmeti alın.</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* 1+1 Package */}
+          <div className="bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300">
+            <div className="h-64 overflow-hidden">
+              <img 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" 
+                alt="1+1 Boya Paketi" 
+              />
+            </div>
+            <div className="p-8 flex-grow flex flex-col justify-between items-center text-center">
+              <div>
+                <h3 className="font-headline text-2xl mb-2">1+1 Daire</h3>
+                <p className="text-on-surface-variant text-sm font-body mb-8">Küçük ve şık yaşam alanlarınız için ideal, hızlı ve temiz boya çözümü.</p>
+              </div>
+              <a 
+                href="https://wa.me/905367881775?text=Merhaba,%201%2B1%20dairem%20icin%20boya%20fiyati%20almak%20istiyorum." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-on-primary py-4 rounded font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors flex items-center justify-center gap-2"
+              >
+                <span className="material-symbols-outlined text-sm">chat</span>
+                Fiyat Teklifi Al
+              </a>
+            </div>
+          </div>
+
+          {/* 2+1 Package */}
+          <div className="bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300 relative">
+            <div className="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest z-10">En Çok Tercih Edilen</div>
+            <div className="h-64 overflow-hidden">
+              <img 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80" 
+                alt="2+1 Boya Paketi" 
+              />
+            </div>
+            <div className="p-8 flex-grow flex flex-col justify-between items-center text-center">
+              <div>
+                <h3 className="font-headline text-2xl mb-2">2+1 Daire</h3>
+                <p className="text-on-surface-variant text-sm font-body mb-8">Standart aile evleri için baştan aşağıya yenilenme ve profesyonel işçilik.</p>
+              </div>
+              <a 
+                href="https://wa.me/905367881775?text=Merhaba,%202%2B1%20dairem%20icin%20boya%20fiyati%20almak%20istiyorum." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-on-primary py-4 rounded font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors flex items-center justify-center gap-2"
+              >
+                <span className="material-symbols-outlined text-sm">chat</span>
+                Fiyat Teklifi Al
+              </a>
+            </div>
+          </div>
+
+          {/* 3+1 Package */}
+          <div className="bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300">
+            <div className="h-64 overflow-hidden">
+              <img 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" 
+                alt="3+1 Boya Paketi" 
+              />
+            </div>
+            <div className="p-8 flex-grow flex flex-col justify-between items-center text-center">
+              <div>
+                <h3 className="font-headline text-2xl mb-2">3+1 Daire</h3>
+                <p className="text-on-surface-variant text-sm font-body mb-8">Geniş yaşam alanlarınız için detaylara önem veren, kapsamlı renk ve doku uygulaması.</p>
+              </div>
+              <a 
+                href="https://wa.me/905367881775?text=Merhaba,%203%2B1%20dairem%20icin%20boya%20fiyati%20almak%20istiyorum." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-on-primary py-4 rounded font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors flex items-center justify-center gap-2"
+              >
+                <span className="material-symbols-outlined text-sm">chat</span>
+                Fiyat Teklifi Al
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Featured Projects - Bento Grid */}
-      <section className="max-w-7xl mx-auto px-8 py-32">
+      <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.8 }} className="max-w-7xl mx-auto px-8 pb-32">
         <div className="flex justify-between items-end mb-16">
           <div>
             <h2 className="font-headline text-[1.75rem] text-on-surface mb-4">Öne Çıkan Projeler</h2>
@@ -125,10 +215,10 @@ const HomePage = () => {
             </div>
           </Link>
         </div>
-      </section>
+      </motion.section>
 
       {/* Services Section */}
-      <section className="max-w-7xl mx-auto px-8 py-32 bg-surface">
+      <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.8 }} className="max-w-7xl mx-auto px-8 py-32 bg-surface">
         <div className="text-center mb-16">
           <span className="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Uzmanlık Alanlarımız</span>
           <h2 className="font-headline text-[2rem] text-on-surface">Hizmetlerimiz</h2>
@@ -162,10 +252,12 @@ const HomePage = () => {
               Tüm Hizmetleri Gör
           </Link>
         </div>
-      </section>
+      </motion.section>
+
+
 
       {/* Our Philosophy */}
-      <section className="bg-surface-container-low py-32 overflow-hidden">
+      <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.8 }} className="bg-surface-container-low py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-24">
           <div className="relative">
             <div className="aspect-[4/5] bg-surface-container-highest rounded-lg overflow-hidden editorial-shadow">
@@ -200,10 +292,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Newsletter */}
-      <section className="max-w-7xl mx-auto px-8 py-48 text-center">
+      <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.8 }} className="max-w-7xl mx-auto px-8 py-48 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-headline text-[2rem] text-on-surface mb-6 italic">Atölyeye Katılın</h2>
           <p className="font-body text-on-surface-variant mb-12">İç tasarım, yavaş yaşam ve yeni proje önizlemeleri hakkında haftalık bültenimize abone olun.</p>
@@ -214,7 +306,7 @@ const HomePage = () => {
             </button>
           </form>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 };
